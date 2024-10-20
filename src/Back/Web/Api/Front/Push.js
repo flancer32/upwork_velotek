@@ -64,6 +64,7 @@ export default class Velotek_Back_Web_Api_Front_Push {
                         if (subscriptId) rs.success = true;
                     }
                 }
+                await trx.commit();
                 Object.assign(res, rs); // compose the API response after the RDB commit
                 logger.info(`Response: ${JSON.stringify(res)}`);
             } catch (error) {
