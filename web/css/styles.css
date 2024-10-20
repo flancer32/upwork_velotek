@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffcc00; /* Yellow background */
+    display: flex;
+    flex-direction: column; /* Allow vertical stacking of sections */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    height: 100%; /* Full height of the body */
+    justify-content: space-between; /* Space out the sections evenly */
+    text-align: center;
+}
+
+.top-section {
+    flex: 1; /* Takes up one-quarter of the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.middle-section {
+    flex: 1; /* Takes up one-half of the height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.bottom-section {
+    flex: 1; /* Takes up one-quarter of the height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.vip-title {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.offer-text {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #888; /* Button color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #666; /* Darker shade on hover */
+}

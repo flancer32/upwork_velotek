@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velotek Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', async () => {
+            // VARS
+            const urlSw = 'sw.js';
+            const nsApp = 'Velotek_Front_Admin';
+
+            // MAIN
+            try {
+                const {bootstrap} = await import('./web/@teqfw/web/js/bootstrap.mjs');
+                bootstrap(null, null, urlSw, nsApp).catch(console.error);
+            } catch (e) {
+                console.error(e);
+            }
+        });
+    </script>
+</head>
+<body>
+<header>
+    <h1>Welcome to Velotek Admin!</h1>
+</header>
+<main>
+    <div id="frontsContainer"></div>
+</main>
+<footer>
+    <p>&copy; 2024 Velotek</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="./pwa.json">
+    <title>Velotek VIP Club</title>
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', async () => {
+            // VARS
+            const urlSw = 'sw.js';
+            const nsApp = 'Velotek_Front_App';
+
+            // FUNCS
+            function fnLog(msg) {
+                console.log(`[app-shell]: ${msg}`);
+
+            }
+
+            function fnProgress(percent) {
+                console.log(`[app-shell]: ${percent}%`);
+            }
+
+            // MAIN
+            try {
+                const {bootstrap} = await import('./web/@teqfw/web/js/bootstrap.mjs');
+                bootstrap(fnLog, fnProgress, urlSw, nsApp).catch(console.error);
+            } catch (e) {
+                console.error(e);
+            }
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="top-section">
+        <h1 class="logo">velotek</h1>
+        <h2 class="vip-title">VIP CLUB</h2>
+    </div>
+    <div class="middle-section">
+        <p class="offer-text">Get loads of crazy offers and discounts with just one tap of your finger!</p>
+    </div>
+    <div class="bottom-section">
+        <button id="subscriptBtn" class="cta-button">COUNT ME IN!</button>
+    </div>
+</div>
+</body>
+</html>

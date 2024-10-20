@@ -1,0 +1,12 @@
+{
+  "namespace": "",
+  "ref": {
+    "@teqfw/web-push": {
+      "/web/auth/front": {
+        "path": "/front",
+        "attrs": {"id": "id"}
+      }
+    }
+  },
+  "deprecated": {}
+}

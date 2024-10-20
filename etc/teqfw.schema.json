@@ -1,0 +1,19 @@
+{
+  "entity": {
+    "front": {
+      "comment": "Application registry for user browser (front).",
+      "attr": {
+        "id": {"type": "id"},
+        "uuid": {"type": "string", "comment": "Universally Unique Identifier."},
+        "date_created": {
+          "comment": "Date-time when record was created.",
+          "type": "datetime",
+          "default": "current"
+        }
+      },
+      "index": {
+        "uuid": {"type": "unique", "attrs": ["uuid"]}
+      }
+    }
+  }
+}

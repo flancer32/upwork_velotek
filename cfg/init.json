@@ -1,0 +1,22 @@
+{
+  "@teqfw/db": {
+    "client": "pg",
+    "connection": {
+      "database": "ssk",
+      "host": "127.0.0.1",
+      "password": "...",
+      "user": "ssk"
+    }
+  },
+  "@teqfw/core": {
+    "devMode": false
+  },
+  "@teqfw/web": {
+    "server": {
+      "port": 9999,
+      "useHttp1": true,
+      "useWebSocket": false
+    },
+    "urlBase": "domain.com"
+  }
+}

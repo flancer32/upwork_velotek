@@ -1,0 +1,15 @@
+{
+  "@teqfw/di": {
+    "autoload": {
+      "ns": "Velotek",
+      "path": "./src"
+    }
+  },
+  "@teqfw/web-api": {
+    "services": [
+      "Velotek_Back_Web_Api_Front_List",
+      "Velotek_Back_Web_Api_Front_Push",
+      "Velotek_Back_Web_Api_Front_Register"
+    ]
+  }
+}
